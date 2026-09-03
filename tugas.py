@@ -7,11 +7,11 @@ class KamarHotel(ABC):
         self.__harga_dasar = basePrice
 
     @abstractmethod
-    def tampilkan_detail():
+    def tampilkan_detail(self):
         pass
 
     @abstractmethod
-    def hitung_harga_total(jumlah_malam):
+    def hitung_harga_total(self, jumlah_malam):
         pass
 
     def getBasePrice(self):
