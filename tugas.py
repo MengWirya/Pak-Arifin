@@ -38,6 +38,7 @@ class KamarDeluxe(KamarHotel):
         harga = self.getBasePrice()
         print(f'[DELUXE] Kamar Deluxe Sea View | Fasilitas: {', '.join(self.fasilitas)}')
         print(f"Harga Dasar/Malam: Rp " + f"{harga:_.0f}".replace('_', '.') + " | Pajak(10%): Rp " + f"{(harga * self.tax):_.0f}".replace('_', '.') )
+        print(f"Harga Dasar/Malam: Rp " + f"{harga:_.0f}".replace('_', '.'))
 
     def hitung_harga_total(self, jumlah_malam):
         harga = self.getBasePrice()
